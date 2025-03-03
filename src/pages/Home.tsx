@@ -33,8 +33,10 @@ const Home = () => {
                     </div>
                     <div className="flex items-center space-x-4">
                         <a href="#" className="text-gray-800 hover:text-orange-500">Kurslar</a>
-                        <button className="border border-orange-600 px-4 py-2 text-orange-600 rounded hover:bg-orange-600 hover:text-white">Giriş Yap</button>
-                        <button className="border border-orange-600 px-4 py-2 text-white bg-orange-600 rounded hover:bg-white hover:text-orange-600">Kayıt Ol</button>
+                        <button className="border border-orange-600 px-4 py-2 text-orange-600 rounded transition-all duration-300 ease-out hover:bg-gray-200 hover:text-orange-600 transform hover:scale-105 active:scale-95">Giriş Yap</button>
+
+                        <button className="border border-orange-600 px-4 py-2 text-white bg-orange-600 rounded transition-all duration-300 ease-out hover:bg-orange-700 transform hover:scale-105 active:scale-95">Kayıt Ol</button>
+
                     </div>
                 </div>
             </nav>

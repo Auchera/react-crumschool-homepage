@@ -25,7 +25,7 @@ const HeroSection: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, ease: "easeOut" }}
                 >
-                    Geleceğinizi <motion.span className="text-orange-600 inline-block"
+                    Geleceğinizi <motion.span className="text-orange-600 inline-block underline"
                         initial={{ scale: 0 }}
                         animate={{ scale: 1 }}
                         transition={{ delay: 0.5, duration: 0.5, type: "spring", stiffness: 120 }}
