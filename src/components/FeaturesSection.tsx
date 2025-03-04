@@ -36,8 +36,8 @@ const FeaturesSection = () => {
 
                 
                 <div className={`w-1/2 fade-in-left ${isVisible ? "show" : ""}`}>
-                    <h2 className="text-4xl font-bold text-orange-600 mb-6">⚡ AKEM'in Sunduğu Avantajlar</h2>
-                    <p className="text-2xl text-gray-900 underline mb-6">Çocuğunuzu Geleceğe Hazırlıyoruz</p>
+                    <h2 className="text-3xl font-bold text-orange-600 mb-6">AKEM SİZİ GELECEĞE HAZIRLAR ⚡</h2>
+                    <p className="text-2xl  text-gray-900 underline mb-6">Çocuğunuzu Geleceğe Hazırlıyoruz</p>
                     <ul className="space-y-3 text-gray-900 text-lg">
                         <li>✅ Her öğrenciye özel kişiselleştirilmiş danışmanlık hizmeti sunuyoruz.</li>
                         <li>✅ Bilimsel testler ve detaylı analizlerle güçlü yönleri ortaya çıkarıyoruz.</li>
