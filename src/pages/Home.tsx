@@ -25,22 +25,37 @@ const Home = () => {
         <div className="min-h-screen bg-gray-50 font-sans">
             {/* ------------------ Navbar ------------------*/}
             <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-                <div className="max-w-6xl mx-auto flex justify-between items-center py-4 px-6 relative">
-                    <div className="flex items-center">
-                        <img src="/images/logo.png" alt="Logo" className="h-10" />
-                    </div>
-                    <div className="absolute left-1/2 transform -translate-x-1/2">
-                        <span  className="text-xl font-bold text-gray-800 ">AKEM - AKADEMİK KARİYER EĞİTİM MERKEZİ</span>
-                    </div>
-                    <div className="flex items-center space-x-4">
-                       
-                        <button className="border border-orange-500 px-4 py-2 text-orange-600 rounded transition-all duration-300 ease-out hover:bg-gray-200 hover:text-orange-600 transform hover:scale-105 active:scale-95">Giriş Yap</button>
+    <div className="max-w-6xl mx-auto flex items-center justify-between py-3 px-4 sm:px-6 lg:px-8">
 
-                        <button className="border border-orange-500 px-4 py-2 text-white bg-orange-600 rounded transition-all duration-300 ease-out hover:bg-orange-700 transform hover:scale-105 active:scale-95">Kayıt Ol</button>
+        <div className="flex-shrink-0">
+            <img src="/images/logo.png" alt="Logo" className="h-8 sm:h-10" />
+        </div>
 
-                    </div>
-                </div>
-            </nav>
+
+        <div className="hidden sm:flex absolute left-1/2 transform -translate-x-1/2">
+            <span className="text-base sm:text-lg md:text-xl font-bold text-gray-800 text-center">
+                AKEM - AKADEMİK KARİYER EĞİTİM MERKEZİ
+            </span>
+        </div>
+
+
+        <div className="flex items-center space-x-3 sm:space-x-4">
+            <button className="border border-orange-500 text-orange-600 px-3 py-1 sm:px-4 sm:py-2 rounded transition-all duration-300 ease-out hover:bg-gray-200 hover:text-orange-600 transform hover:scale-105 active:scale-95 text-xs sm:text-sm">
+                Giriş Yap
+            </button>
+            <button className="border border-orange-500 text-white bg-orange-600 px-3 py-1 sm:px-4 sm:py-2 rounded transition-all duration-300 ease-out hover:bg-orange-700 transform hover:scale-105 active:scale-95 text-xs sm:text-sm">
+                Kayıt Ol
+            </button>
+        </div>
+
+        <div className="sm:hidden w-full text-center absolute top-full left-0 bg-white shadow-md py-2">
+            <span className="text-sm font-bold text-gray-800 block">
+                AKEM - AKADEMİK KARİYER EĞİTİM MERKEZİ
+            </span>
+        </div>
+    </div>
+</nav>
+
 
              {/* ------------------ Hero ------------------*/}
             <div id="head" className="min-h-screen bg-gray-50 font-sans">
