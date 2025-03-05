@@ -93,16 +93,16 @@ const HeroSection: React.FC = () => {
         >
             <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
-            <div className="relative z-10 space-y-4 max-w-4xl w-full px-4 sm:px-6 lg:px-8">
-                <motion.h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-wide leading-tight">
+            <div className="relative z-10 space-y-4 max-w-4xl mx-auto px-4">
+                <motion.h1 className="text-3xl mt-5 sm:text-5xl font-extrabold tracking-wide leading-tight">
                     Geleceğinizi <span className="text-orange-500 underline">AKEM</span> ile İnşa Edin
                 </motion.h1>
-                <motion.p className="text-sm sm:text-base md:text-lg">
+                <motion.p className="text-base sm:text-m mb-4">
                     PDR testlerimiz ile potansiyelinizi öğrenip geleceğe yön verin. Test sonuçlarını analiz edip, en uygun kariyer rotanızı birlikte belirliyoruz.
                 </motion.p>
             </div>
 
-            <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
                 {cards.map((card, index) => (
                     <FlipCard key={index} card={card} />
                 ))}
@@ -110,11 +110,11 @@ const HeroSection: React.FC = () => {
 
             <motion.button
                 onClick={scrollToCourses}
-                className="relative border border-white bg-gray-900 text-white font-bold uppercase tracking-wide overflow-hidden group mt-6
-                           text-xs sm:text-sm md:text-base
-                           h-10 sm:h-12 md:h-14
-                           px-4 sm:px-6 md:px-8
-                           rounded-md sm:rounded-lg shadow-lg"
+                className="relative border border-white bg-gray-900 text-white font-bold uppercase tracking-wide overflow-hidden group 
+                           text-xs sm:text-sm 
+                           h-8 sm:h-9 
+                           px-3 sm:px-4 
+                           rounded-md shadow-lg"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 whileHover={{
