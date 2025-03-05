@@ -73,60 +73,47 @@ const HeroSection: React.FC = () => {
 
     return (
         <section
-            className="relative h-screen flex flex-col justify-center items-center text-white text-center overflow-hidden bg-cover bg-center space-y-8"
-            style={{ backgroundImage: "url('/images/bgmain.jpg')" }}
-        >
-            <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+    className="relative min-h-screen py-12 flex flex-col justify-center items-center text-white text-center overflow-hidden bg-cover bg-center space-y-8"
+    style={{ backgroundImage: "url('/images/bgmain.jpg')" }}
+>
+    <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
-            <div className="relative z-10 space-y-4 max-w-4xl mx-auto">
-                <motion.h1
-                    className="text-5xl font-extrabold tracking-wide leading-tight"
-                    initial={{ opacity: 0, y: -50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1 }}
-                >
-                    Geleceğinizi{" "}
-                    <motion.span
-                        className="text-orange-500 inline-block underline"
-                        initial={{ opacity: 0, scale: 0 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: 0.5, duration: 0.5 }}
-                    >
-                        AKEM
-                    </motion.span>{" "}
-                    ile İnşa Edin
-                </motion.h1>
+    <div className="relative z-10 space-y-4 max-w-4xl mx-auto px-4">
+        <motion.h1 className="text-3xl sm:text-5xl font-extrabold tracking-wide leading-tight">
+            Geleceğinizi <span className="text-orange-500 underline">AKEM</span> ile İnşa Edin
+        </motion.h1>
+        <motion.p className="text-base sm:text-lg">
+            PDR testlerimiz ile potansiyelinizi öğrenip geleceğe yön verin.
+        </motion.p>
+    </div>
 
-                <motion.p
-                    className="text-lg leading-relaxed"
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.6, duration: 0.8 }}
-                >
-                    PDR testlerimiz ile potansiyeliizi öğrenip geleceğe yön verin. Test sonuçlarını analiz edip, en uygun kariyer rotanızı birlikte belirliyoruz.
-                </motion.p>
-            </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {cards.map((card, index) => (
-                    <FlipCard key={index} card={card} />
-                ))}
-            </div>
+        {cards.map((card, index) => (
+            <FlipCard key={index} card={card} />
+        ))}
+    </div>
 
-            <motion.button
+    <motion.button
     onClick={scrollToCourses}
-    className="relative border border-white bg-gray-900 text-white font-bold py-3 px-8 rounded-lg shadow-lg uppercase tracking-wide overflow-hidden group mt-6"
+    className="relative border border-white bg-gray-900 text-white font-bold uppercase tracking-wide overflow-hidden group mt-4
+               text-xs sm:text-sm md:text-base
+               h-8 sm:h-10 md:h-12
+               px-4 sm:px-6 md:px-8
+               rounded-md sm:rounded-lg shadow-lg"
     initial={{ opacity: 0, scale: 0.8 }}
     animate={{ opacity: 1, scale: 1 }}
     whileHover={{
-        boxShadow: "0 0 25px rgba(255, 255, 255, 0.7)"
+        boxShadow: "0 0 15px rgba(255, 255, 255, 0.5)"
     }}
 >
     <span className="absolute inset-0 bg-gradient-to-r from-orange-400 to-orange-700 scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
     <span className="relative z-10">Hemen Teste Başla</span>
 </motion.button>
 
-        </section>
+
+</section>
+
     );
 };
 
